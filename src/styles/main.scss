@@ -1,0 +1,44 @@
+$red: #FF2120;
+$blue: #271DFF;
+
+html, body {
+  margin: 0;
+  font-family: Futura;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tools, .console {
+  width: 100%;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+.console {
+  border-top: 1px solid #ccc;
+
+  pre {
+    margin: 16px;
+    padding: 8px;
+    background-color: #eee;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin: 8px;
+  border: 4px solid black;
+  padding: 8px 16px;
+
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+  }
+
+  &:active {
+    color: $red;
+    border-color: $red;
+  }
+}
