@@ -42,8 +42,8 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production'),
-        'PUSHER_KEY': config.PUSHER_KEY,
-        'SERVER_URL': config.SERVER_URL
+        'PUSHER_KEY': JSON.stringify(config.PUSHER_KEY),
+        'SERVER_URL': JSON.stringify(config.SERVER_URL)
       }
     }),
     new webpack.HotModuleReplacementPlugin(),
